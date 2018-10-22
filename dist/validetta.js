@@ -2,7 +2,7 @@
  * Validetta (https://github.com/PixelUnion/validetta)
  * Version 2.0.3
  * Licensed under MIT (https://github.com/hsnayd/validetta/blob/master/LICENCE)
- * Copyright 2013-2017 Hasan Aydoğdu - http://www.hasanaydogdu.com 
+ * Copyright 2013-2017 Hasan Aydoğdu - http://www.hasanaydogdu.com
  */
 /*eslint-env es6:false*/
 
@@ -87,7 +87,6 @@
         case 'checkbox' : return tmp.el.checked || messages.required;
         case 'radio' : return this.radio.call(self, tmp.el) || messages.required;
         case 'select-multiple' : return tmp.val !== null || messages.required;
-        case 'select-one' : return tmp.val !== null || messages.required;
         default : return tmp.val !== '' || messages.required;
       }
     },
